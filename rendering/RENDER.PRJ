@@ -1,0 +1,11 @@
+BASE_SC.PRG          ; Output binary name
+
+.C [ -b4 -r6 ]      ; Compiler options
+.S [ -m0 ]          ; Assembler options
+
+=                   ; List of files to compile and link:
+PCSTART.O           ; Pure C startup code (Mandatory)
+BASE_SC.C           ; Your C source code file
+
+PCSTDLIB.LIB        ; Standard library (for malloc/free)
+PCTOSLIB.LIB        ; TOS library (for Setscreen, Physbase, etc.)
