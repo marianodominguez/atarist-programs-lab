@@ -6,6 +6,8 @@
 *.ko
 *.obj
 *.elf
+*.TOS
+*.PI1
 
 # Linker output
 *.ilk
